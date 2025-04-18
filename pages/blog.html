@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body style="background-color: rgb(29, 27, 27);">
+    <div class="container">
+        <!--    HEADER  -->
+        <nav class="navbar custom-navbar navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Energy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="pages/clases.html" role="button"
+                                data-bs-toggle="dropdown">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/clases.html">Musculacion</a></li>
+                                <li><a class="dropdown-item" href="../pages/clases.html">Crossfit</a></li>
+                                <li><a class="dropdown-item" href="../pages/clases.html">Yoga</a></li>
+                                <li><a class="dropdown-item" href="../pages/clases.html">Spinning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/entrenadores.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Entrenadores
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/entrenadores.html">Ver Todos</a></li>
+                                <li><a class="dropdown-item" href="../pages/entrenadores.html">Especialistas</a></li>
+                                <li><a class="dropdown-item" href="../pages/entrenadores.html">Nuevos Coaches</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/precios.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Precios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/precios.html">Mensual</a></li>
+                                <li><a class="dropdown-item" href="../pages/precios.html">Anual</a></li>
+                                <li><a class="dropdown-item" href="../pages/precios.html">Comparador</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/blog.html">Enlace</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--    MENU ZONE   -->
+
+        <div class="container text-center border text-white rounded-3" style="font-family: 'Arial', sans-serif;">
+            <div class="py-4">
+                <h1 class="display-4 fw-bold">BLOG FITNESS</h1>
+                <p class="lead">Tu fuente de información para un estilo de vida saludable</p>
+            </div>
+            <!--    FULL BODY   -->
+            <div class="row">
+                <div class="col-sm-8 news">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+                                <div class="container">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarCategories" aria-controls="navbarCategories"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                    <div class="collapse navbar-collapse" id="navbarCategories">
+                                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase">
+                                            <li class="nav-item">
+                                                <a class="nav-link active category-link" href="#"
+                                                    data-filter="all">Todos</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link category-link" href="#"
+                                                    data-filter="entrenamiento">Entrenamiento</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link category-link" href="#"
+                                                    data-filter="nutricion">Nutrición</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link category-link" href="#" data-filter="salud">Salud y Bienestar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-sm-4 entrenamiento">
+                            <div class="card h-100" style="width: 100%;">
+                                <img src="../assets/images/blog/hiit.jpg" class="card-img-top" alt="HIIT explosivo">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">HIIT explosivo</h5>
+                                    <p class="card-text">Entrena con intensidad en sesiones cortas para quemar grasa y
+                                        mejorar tu capacidad cardiovascular. Ideal para entrenamientos rápidos pero
+                                        efectivos.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 nutricion">
+                            <div class="card h-100" style="width: 100%;">
+                                <img src="../assets/images/blog/postejercicio.jpg" class="card-img-top"
+                                    alt="Alimentación post-entreno">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Alimentación post-entreno</h5>
+                                    <p class="card-text">Aprende a estructurar tu comida después de entrenar para
+                                        maximizar la recuperación muscular, mantener energía y evitar lesiones.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 entrenamiento">
+                            <div class="card h-100" style="width: 100%;">
+                                <img src="../assets/images/blog/errores.jpg" class="card-img-top"
+                                    alt="Errores comunes al entrenar">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Errores comunes al entrenar</h5>
+                                    <p class="card-text">Descubre mitos del fitness, errores frecuentes en el gimnasio y
+                                        cómo corregirlos para lograr mejores resultados de forma segura.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mt-3">
+                        <div class="col-sm-4 salud">
+                            <div class="card h-100" style="width: 100%;">
+                                <img src="../assets/images/blog/sueño.jpg" class="card-img-top"
+                                    alt="Sueño y rendimiento físico">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Sueño y rendimiento físico</h5>
+                                    <p class="card-text">Dormir bien es clave para tu progreso. Aprende cómo el descanso
+                                        afecta la fuerza, el metabolismo y la regeneración muscular.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 entrenamiento">
+                            <div class="card h-100" style="width: 100%;">
+                                <img src="../assets/images/blog/movilidad.jpg" class="card-img-top"
+                                    alt="Movilidad y entrenamiento funcional">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Movilidad y funcionalidad</h5>
+                                    <p class="card-text">Mejora tu movilidad, equilibrio y postura con ejercicios
+                                        funcionales. Perfecto para todas las edades y niveles de condición física.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 nutricion">
+                            <div class="card h-100" style="width: 100%;">
+                                <img src="../assets/images/blog/suplementos.jpg" class="card-img-top" alt="Top 3 suplementos clave">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Top 3 suplementos clave</h5>
+                                    <p class="card-text">Descubre los suplementos realmente efectivos: creatina,
+                                        proteína de suero y cafeína. ¿Cuándo tomarlos y cómo aprovecharlos?</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mt-3">
+                        <div class="col-sm-4 entrenamiento">
+                            <div class="card h-100" style="width: 100%;">
+                                <img src="../assets/images/blog/ejercicios.jpg" class="card-img-top" alt="HIIT explosivo">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Ejercicios</h5>
+                                    <p class="card-text">Entrena con intensidad en sesiones cortas para quemar grasa y
+                                        mejorar tu capacidad cardiovascular. Ideal para entrenamientos rápidos pero
+                                        efectivos.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 nutricion">
+                            <div class="card h-100" style="width: 100%;">
+                                <img src="../assets/images/blog/despues de entrenar.jpg" class="card-img-top"
+                                    alt="Alimentación post-entreno">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Alimentación despues de entrenar</h5>
+                                    <p class="card-text">Aprende a estructurar tu comida después de entrenar para
+                                        maximizar la recuperación muscular, mantener energía y evitar lesiones.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 entrenamiento">
+                            <div class="card h-100" style="width: 100%;">
+                                <img src="../assets/images/blog/tecnicas.jpg" class="card-img-top"
+                                    alt="Errores comunes al entrenar">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Tecnicas de ejercicios</h5>
+                                    <p class="card-text">Descubre mitos del fitness, errores frecuentes en el gimnasio y
+                                        cómo corregirlos para lograr mejores resultados de forma segura.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--    SLIDE DE TENDENCIAS 4/12    -->
+
+                <div class="col-sm-4 bg-dark p-3 rounded">
+                    <h2 class="mb-4">TENDENCIAS 2025</h2>
+                    <div class="row g-3">
+                        <div class="col-sm-12">
+                            <div class="card mb-3" style="width: 100%;">
+                                <img src="../assets/images/blog/Fitness-Tech.jpg" class="card-img-top" alt="Fitness Tech">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Fitness Tech</h5>
+                                    <p class="card-text">Los wearables biométricos avanzados ahora pueden predecir
+                                        lesiones con 48 horas de anticipación analizando patrones de movimiento y fatiga
+                                        muscular. La revolución del fitness personalizado.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                            <div class="card mb-3" style="width: 100%;">
+                                <img src="../assets/images/blog/Entrenamienthíbrido.jpg" class="card-img-top" alt="Entrenamiento híbrido">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Entrenamiento híbrido</h5>
+                                    <p class="card-text">La combinación de entrenamientos presenciales y virtuales
+                                        aumenta la adherencia en un 78%. Los estudios de fitness están implementando
+                                        sistemas de coaching mixto con seguimiento personalizado.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 100%;">
+                                <img src="../assets/images/blog/mindfulness.jpg" class="card-img-top" alt="Mindful Fitness">
+                                <div class="card-body text-dark">
+                                    <h5 class="card-title">Mindful Fitness</h5>
+                                    <p class="card-text">La integración de técnicas de mindfulness en el entrenamiento
+                                        mejora los resultados en un 25%. El entrenamiento de la conexión mente-músculo
+                                        es la nueva frontera del fitness de elite.</p>
+                                    <a href="#" class="btn btn-primary">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMENTARIOS SECCION -->
+            <div class="row my-5">
+                <div class="col-12">
+                    <h2 class="mb-4 text-white">COMENTARIOS DE NUESTRA COMUNIDAD</h2>
+                </div>
+
+                <!-- Comentario 1 -->
+                <div class="col-md-4 mb-3">
+                    <div class="comentario bg-dark p-3 rounded avatar-maria" data-aos="fade-up">
+                        <h5>María S. - Entrenador personal</h5>
+                        <p>"El artículo sobre entrenamiento HIIT me ayudó a rediseñar las rutinas de mis clientes."</p>
+                        <div class="text-warning">★★★★★</div>
+                        <div class="acciones-comentario mt-2">
+                            <button class="btn btn-sm btn-outline-light btn-responder">Responder</button>
+                            <button class="btn btn-sm btn-outline-warning btn-destacar">Destacar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentario 2 -->
+                <div class="col-md-4 mb-3">
+                    <div class="comentario bg-dark p-3 rounded avatar-carlos" data-aos="fade-up">
+                        <h5>Carlos M. - Nutricionista deportivo</h5>
+                        <p>"La información sobre suplementación es precisa y basada en evidencia."</p>
+                        <div class="text-warning">★★★★☆</div>
+                        <div class="acciones-comentario mt-2">
+                            <button class="btn btn-sm btn-outline-light btn-responder">Responder</button>
+                            <button class="btn btn-sm btn-outline-warning btn-destacar">Destacar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentario 3 -->
+                <div class="col-md-4 mb-3">
+                    <div class="comentario bg-dark p-3 rounded avatar-laura" data-aos="fade-up">
+                        <h5>Laura T. - Atleta recreativa</h5>
+                        <p>"Los consejos sobre recuperación cambiaron por completo mi enfoque."</p>
+                        <div class="text-warning">★★★★★</div>
+                        <div class="acciones-comentario mt-2">
+                            <button class="btn btn-sm btn-outline-light btn-responder">Responder</button>
+                            <button class="btn btn-sm btn-outline-warning btn-destacar">Destacar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentario 4 -->
+                <div class="col-md-6 mb-3">
+                    <div class="comentario bg-dark p-3 rounded avatar-roberto" data-aos="fade-right">
+                        <h5>Roberto D. - Culturista amateur</h5>
+                        <p>"La sección sobre mitos del entrenamiento de fuerza debería ser lectura obligatoria."</p>
+                        <div class="text-warning">★★★★☆</div>
+                        <div class="acciones-comentario mt-2">
+                            <button class="btn btn-sm btn-outline-light btn-responder">Responder</button>
+                            <button class="btn btn-sm btn-outline-warning btn-destacar">Destacar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentario 5 -->
+                <div class="col-md-6 mb-3">
+                    <div class="comentario bg-dark p-3 rounded avatar-elena" data-aos="fade-left">
+                        <h5>Elena P. - Fisioterapeuta deportiva</h5>
+                        <p>"El artículo sobre entrenamiento funcional complementa perfectamente lo que recomendamos a
+                            pacientes."</p>
+                        <div class="text-warning">★★★★★</div>
+                        <div class="acciones-comentario mt-2">
+                            <button class="btn btn-sm btn-outline-light btn-responder">Responder</button>
+                            <button class="btn btn-sm btn-outline-warning btn-destacar">Destacar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--    FIN DE SECCION 12-12 -->
+            <div class="row py-3 bg-dark mt-4 rounded">
+                <div class="col-12">
+                    <h4>BLOG FITNESS 2025 | Tu recurso definitivo para un estilo de vida saludable</h4>
+                    <p>Suscríbete a nuestro newsletter para recibir contenido exclusivo</p>
+                </div>
+            </div>
+        </div>
+        <!--    FOOTER ZONE     -->
+
+        <footer class="container text-center text-white mt-2 mb-0 p-3 rounded-3 bg-transparent footer-zone">
+            <div class="row">
+                <div class="col rounded-3">
+                    <h1>Nos encontrás aquí</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.6736892698195!2d-65.2949310809686!3d-24.188943905896465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1744863215998!5m2!1ses-419!2sar"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6 p-5">
+                    <form id="newsletterForm" class="needs-validation" novalidate>
+                        <label for="emailInput" class="form-label">Suscribite a nuestro Newsletter</label>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" id="emailInput" placeholder="nombre@gmail.com"
+                                required>
+                            <button type="submit" class="btn btn-primary" id="subscribeBtn">
+                                <span id="spinner" class="spinner-border spinner-border-sm d-none" role="status"
+                                    aria-hidden="true"></span>
+                                Suscribirse
+                            </button>
+                        </div>
+                        <div class="invalid-feedback text-start">Por favor ingresá un correo válido.</div>
+                    </form>
+                </div>
+
+                <div class="col-md-3 p-2">
+                    <p>Contacto</p>
+                    <p>Teléfono: 123-456-7890</p>
+                    <p>Dirección: Facultad de Ingeniería</p>
+                    <p>Email: Energy@edu.unju.ar</p>
+                </div>
+
+                <div class="col-md-3 p-5">
+                    <h1>Redes Sociales</h1>
+                    <div class="d-flex justify-content-around">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="facebook" class="img-fluid" style="width: 32px;">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram" class="img-fluid" style="width: 32px;">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="twitter" class="img-fluid" style="width: 32px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="container text-center bg-transparent text-white mt-0 mb-0 p-3 rounded-3 footer-zone">
+            <div class="row">
+                <div class="col">
+                    <p>&copy; 2025 Energy. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/blog.js"></script>
+    <script src="../js/comentarios.js"></script>
+    <script src="../js/contacto.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

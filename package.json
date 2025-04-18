@@ -1,0 +1,21 @@
+{
+  "name": "gimnasio",
+  "version": "1.0.0",
+  "description": "sitio web gimansio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xriisemanuel"
+  },
+  "keywords": [
+    "@Github2025"
+  ],
+  "author": "XriisEmanuel",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.5"
+  }
+}

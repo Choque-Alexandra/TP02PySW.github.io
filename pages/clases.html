@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/clases.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-color: rgb(29, 27, 27);">
+    <div class="container">
+        <!--    HEADER  -->
+        <nav class="navbar custom-navbar navbar-expand-lg border-bottom border-body bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Energy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="pages/clases.html" role="button"
+                                data-bs-toggle="dropdown">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="clases.html">Musculacion</a></li>
+                                <li><a class="dropdown-item" href="clases.html">Crossfit</a></li>
+                                <li><a class="dropdown-item" href="clases.html">Yoga</a></li>
+                                <li><a class="dropdown-item" href="clases.html">Spinning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/entrenadores.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Entrenadores
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/entrenadores.html">Ver Todos</a></li>
+                                <li><a class="dropdown-item" href="../pages/entrenadores.html">Especialistas</a></li>
+                                <li><a class="dropdown-item" href="../pages/entrenadores.html">Nuevos Coaches</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/precios.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Precios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="precios.html">Mensual</a></li>
+                                <li><a class="dropdown-item" href="precios.html">Anual</a></li>
+                                <li><a class="dropdown-item" href="precios.html">Comparador</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Enlace</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--    MENU ZONE   -->
+        <section id="classes" class="classes-section py-5">
+            <div class="container">
+                <div class="text-center mb-5 bg-white">
+                    <h2 class="display-5 fw-bold">Nuestras Clases</h2>
+                    <p class="lead">Descubre la amplia variedad de actividades que tenemos para ti</p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="filter-container">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <button class="btn filter-btn active mx-1" data-category="all">Todas</button>
+                        <button class="btn filter-btn mx-1" data-category="Musculacion">Musculacion</button>
+                        <button class="btn filter-btn mx-1" data-category="Crossfit">Crossfit</button>
+                        <button class="btn filter-btn mx-1" data-category="Spinning">Spinning</button>
+                        <button class="btn filter-btn mx-1" data-category="yoga">Yoga</button>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Masonry Gallery -->
+
+        <div class="container text-center">
+            <div class="row mb-2">
+                <div class="col gallery-item Musculacion">
+                    <div class="card gym-card">
+                        <img src="../assets/images/clases/musculacion.jpg" class="card-img-top"
+                            alt="Imagen de Crossfit">
+                        <div class="card-body bg-dark text-white rounded-3">
+                            <h5 class="card-title">MUSCULACION</h5>
+                            <p class="card-text">Es un entrenamiento de fuerza centrado en el desarrollo muscular mediante ejercicios con pesas y máquinas.</p>
+                            <a href="#" class="btn btn-primary card-btn btn-custom">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 gallery-item Crossfit">
+                    <div class="card gym-card">
+                        <img src="../assets/images/clases/crossfit.png" class="card-img-top" alt="Imagen de Crossfit">
+                        <div class="card-body bg-dark text-white rounded-3">
+                            <h5 class="card-title">CROSSFIT</h5>
+                            <p class="card-text">Es un entrenamiento funcional de alta intensidad que combina levantamiento de pesas, cardio y ejercicios gimnásticos.</p>
+                            <a href="#" class="btn btn-primary card-btn btn-custom">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col gallery-item Spinning">
+                    <div class="card gym-card">
+                        <img src="../assets/images/clases/spinning.jpg" class="card-img-top" alt="Imagen de Crossfit">
+                        <div class="card-body bg-dark text-white rounded-3">
+                            <h5 class="card-title">SPINNING</h5>
+                            <p class="card-text">es un entrenamiento cardiovascular en bicicleta fija, guiado por música y ritmo.</p>
+                            <a href="#" class="btn btn-primary card-btn btn-custom">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--    SEGUNDA FILA DE LA GALERIA-->
+
+            <div class="row mb-2">
+                <div class="col gallery-item yoga">
+                    <div class="card gym-card">
+                        <img src="../assets/images/clases/yoga.png" class="card-img-top" alt="Imagen de Crossfit">
+                        <div class="card-body bg-dark text-white rounded-3">
+                            <h5 class="card-title">YOGA</h5>
+                            <p class="card-text">Es una práctica que combina posturas físicas, respiración consciente y meditación. 
+                            </p>
+                            <a href="#" class="btn btn-primary card-btn btn-custom">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 gallery-item Musculacion">
+                    <div class="card gym-card">
+                        <img src="../assets/images/clases/musculacion2.png" class="card-img-top"
+                            alt="Imagen de Crossfit">
+                        <div class="card-body bg-dark text-white rounded-3">
+                            <h5 class="card-title">MUSCULACION</h5>
+                            <p class="card-text">Mejora la tonificación, la resistencia y la salud general del cuerpo.</p>
+                            <a href="#" class="btn btn-primary card-btn btn-custom">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col gallery-item Crossfit">
+                    <div class="card gym-card">
+                        <img src="../assets/images/clases/crossfit2.png" class="card-img-top" alt="Imagen de Crossfit">
+                        <div class="card-body bg-dark text-white rounded-3">
+                            <h5 class="card-title">CROSSFIT</h5>
+                            <p class="card-text">Diseñado para mejorar fuerza, resistencia y agilidad en sesiones dinámicas y desafiantes.</p>
+                            <a href="#" class="btn btn-primary card-btn btn-custom">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--    TERCERA FILA DE LA GALERIA-->
+
+            <div class="row mb-2">
+                <div class="col gallery-item Spinning">
+                    <div class="card gym-card">
+                        <img src="../assets/images/clases/spinngin2.jpg" class="card-img-top" alt="Imagen de Crossfit">
+                        <div class="card-body bg-dark text-white rounded-3">
+                            <h5 class="card-title">SPINNING</h5>
+                            <p class="card-text">Mejora la resistencia, quema calorías y fortalece piernas, todo en una sesión llena de energía y motivación. </p>
+                            <a href="#" class="btn btn-primary card-btn btn-custom">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col gallery-item yoga">
+                    <div class="card gym-card">
+                        <img src="../assets/images/clases/yoga2.png" class="card-img-top" alt="Imagen de Crossfit">
+                        <div class="card-body bg-dark text-white rounded-3">
+                            <h5 class="card-title">YOGA</h5>
+                            <p class="card-text">Ayuda a mejorar la flexibilidad, reducir el estrés y equilibrar cuerpo y mente.</p>
+                            <a href="#" class="btn btn-primary card-btn btn-custom">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="schedule-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold">Horarios de Clases</h2>
+                    <p class="lead">Planifica tu semana con nuestro completo horario de actividades</p>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Hora</th>
+                                    <th scope="col">Lunes</th>
+                                    <th scope="col">Martes</th>
+                                    <th scope="col">Miércoles</th>
+                                    <th scope="col">Jueves</th>
+                                    <th scope="col">Viernes</th>
+                                    <th scope="col">Sábado</th>
+                                    <th scope="col">Domingo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">07:00</th>
+                                    <td>Crossfit</td>
+                                    <td>Musculacion</td>
+                                    <td>Spinning</td>
+                                    <td>Crossfit</td>
+                                    <td>Musculacion</td>
+                                    <td>Yoga</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">09:00</th>
+                                    <td>Yoga</td>
+                                    <td>Crossfit</td>
+                                    <td>Spinning</td>
+                                    <td>Zumba</td>
+                                    <td>Yoga</td>
+                                    <td>Spinning</td>
+                                    <td>Zumba</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12:00</th>
+                                    <td>Musculacion</td>
+                                    <td>Zumba</td>
+                                    <td>Yoga</td>
+                                    <td>Musculacion</td>
+                                    <td>PowerLifting</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">16:00</th>
+                                    <td>Spinning</td>
+                                    <td>Yoga</td>
+                                    <td>Zumba</td>
+                                    <td>Circuit</td>
+                                    <td>Spinning</td>
+                                    <td>Musculacion</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">18:00</th>
+                                    <td>Musculacion</td>
+                                    <td>Spinning</td>
+                                    <td>Yoga</td>
+                                    <td>Crossfit</td>
+                                    <td>Circuit</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">20:00</th>
+                                    <td>Crossfit</td>
+                                    <td>Yoga</td>
+                                    <td>Pilates</td>
+                                    <td>Spinning</td>
+                                    <td>Zumba</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    FOOTER ZONE     -->
+        <footer class="container text-center text-white mt-2 mb-0 p-3 rounded-3 bg-transparent footer-zone">
+            <div class="row">
+                <div class="col rounded-3">
+                    <h1>Nos encontrás aquí</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.6736892698195!2d-65.2949310809686!3d-24.188943905896465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1744863215998!5m2!1ses-419!2sar"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6 p-5">
+                    <form id="newsletterForm" class="needs-validation" novalidate>
+                        <label for="emailInput" class="form-label">Suscribite a nuestro Newsletter</label>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" id="emailInput" placeholder="nombre@gmail.com"
+                                required>
+                            <button type="submit" class="btn btn-primary" id="subscribeBtn">
+                                <span id="spinner" class="spinner-border spinner-border-sm d-none" role="status"
+                                    aria-hidden="true"></span>
+                                Suscribirse
+                            </button>
+                        </div>
+                        <div class="invalid-feedback text-start">Por favor ingresá un correo válido.</div>
+                    </form>
+                </div>
+
+                <div class="col-md-3 p-2">
+                    <p>Contacto</p>
+                    <p>Teléfono: 123-456-7890</p>
+                    <p>Dirección: Facultad de Ingeniería</p>
+                    <p>Email: Energy@edu.unju.ar</p>
+                </div>
+
+                <div class="col-md-3 p-5">
+                    <h1>Redes Sociales</h1>
+                    <div class="d-flex justify-content-around">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="facebook"
+                                class="img-fluid" style="width: 32px;">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram"
+                                class="img-fluid" style="width: 32px;">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="twitter"
+                                class="img-fluid" style="width: 32px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="container text-center bg-transparent text-white mt-0 mb-0 p-3 rounded-3 footer-zone">
+            <div class="row">
+                <div class="col">
+                    <p>&copy; 2025 Energy. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/cards-clases.js"></script>
+</body>
+
+</html>

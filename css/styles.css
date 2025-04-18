@@ -1,0 +1,195 @@
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Aplica estilos a tu navbar */
+
+.custom-navbar {
+  background-color: #172326 !important;
+  /* color de fondo personalizado */
+  padding: 15px 30px;
+  border-radius: 9px;
+  /*text-shadow: 1px 1px 2px #000;  sombra de texto */
+  box-shadow: #e5ff00 0px 0px 2px;
+  /* sombra de la navbar */
+  font-size: larger;
+
+}
+.custom-navbar:hover {
+  box-shadow: #e5ff00 0px 0px 10px;
+  transition: all 0.3s ease;
+  border-radius: 9px;
+}
+/* Estilo para los elementos dentro de la navbar */
+.nav-item {
+  margin-right: 1rem;
+}
+
+
+/* Estilo para los enlaces dentro de la navbar */
+.custom-navbar .nav-link {
+  color: white !important;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #fbff2d !important;
+  background-color: #273005;
+  border-radius: 8px;
+}
+
+/* Centrar el título si está dentro de la navbar */
+/* .custom-navbar{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #d0ff00 !important;
+  margin-right: auto;
+} */
+.navbar-brand  {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d0ff00 !important;
+  margin-right: auto;
+}
+/*  personalizacion del menu dropdawn   */
+
+/* Personaliza el fondo del menú desplegable */
+.dropdown-menu {
+  background-color: #300505;
+  /* fondo oscuro */
+  border-radius: 9px;
+  /* bordes redondeados */
+  border: 1px solid #ffcc00;
+  /* borde con color personalizado */
+  padding: 1px;
+  /* text-align: center; */
+}
+
+/* Estilos para cada ítem de la lista */
+.dropdown-item {
+  color: rgba(208, 234, 18, 0.8);
+  /* texto blanco */
+  padding: 5px 9px;
+  border-radius: 8px;
+  /* cada ítem redondeado */
+  transition: all 0.3s ease;
+  /* animación suave */
+}
+
+/* Hover sobre ítems */
+.dropdown-item:hover {
+  background-color: #d1df0f96;
+  /* fondo amarillo al pasar el mouse */
+  color: rgb(44, 33, 33);
+  /* texto negro */
+  border: 1px solid #ffffff;
+  /* borde blanco en hover */
+}
+
+/* Estilo para el input de búsqueda */
+.custom-search-input {
+  background-color: #300505;
+  color: white;
+  border: 1px solid #ffcc00;
+  border-radius: 6px;
+}
+
+.custom-search-input::placeholder {
+  color: #bbb;
+}
+
+/* Estilo para el botón */
+.custom-search-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.custom-search-btn:hover {
+  background-color: #ffcc00;
+  color: black;
+}
+
+/*  ZONA HERO   */
+/* .hero {
+  height: 50vh;
+  overflow: hidden;
+  border-radius: 9px;
+} */
+
+.hero video {
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.hero {
+  height: 40vh;
+  overflow: hidden;
+  border-radius: 9px;
+}
+
+#overlay {
+  z-index: 1;
+}
+
+#content {
+  z-index: 2;
+}
+
+/*  tarjetas de clases */
+.gym-card {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-custom {
+  background-color: #094c58;
+  color: rgb(177, 230, 240);
+  /* border-radius: 8px; */
+  padding: 10px 20px;
+  /* font-weight: bold; */
+  transition: all 0.3s ease;
+  border: #e6fa32;
+}
+.card-btn:hover {
+  background-color: yellow;
+  color: black;
+  border-radius: 8px;
+}
+
+.counter {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #e5ff00;
+  text-shadow: 2px 2px 10px #08b416;
+}
+.counter-zone:hover {
+  box-shadow: #e5ff00 0px 0px 10px;
+  transition: all 0.3s ease;
+  border-radius: 9px; 
+}
+.carousel:hover {
+  box-shadow: #e5ff00 0px 0px 10px;
+  transition: all 0.3s ease;
+  border-radius: 9px;
+}
+
+.carousel-item h5 {
+  font-size: 2rem;
+}
+
+.footer-zone:hover {
+  box-shadow: #e5ff00 0px 0px 20px;
+}

@@ -1,0 +1,54 @@
+.news {
+    font-family: 'Inter';
+}
+.comentario {
+    position: relative;
+    padding-left: 70px;
+    min-height: 80px;
+    transition: all 0.3s ease;
+}
+
+.comentario::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+/* Avatares personalizados */
+.avatar-maria::before {
+    background-image: url('https://i.pravatar.cc/40');
+}
+
+.avatar-carlos::before {
+    background-image: url('https://i.pravatar.cc/41');
+}
+
+.avatar-laura::before {
+    background-image: url('https://i.pravatar.cc/42');
+}
+
+.avatar-roberto::before {
+    background-image: url('../assets/images/avatars/roberto.png');
+}
+
+.avatar-elena::before {
+    background-image: url('../assets/images/avatars/elena.png');
+}
+
+/* Comentario destacado */
+.comentario.destacado {
+    border: 2px solid gold;
+    box-shadow: 0 0 10px gold;
+}
+
+/* .comentario::before {
+    background-image: url('https://i.pravatar.cc/40');
+    url('../assets/images/avatars/maria.png');
+} */

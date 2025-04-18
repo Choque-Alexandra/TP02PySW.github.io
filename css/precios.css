@@ -1,0 +1,15 @@
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.highlight {
+  background-color: #31999b !important;
+  transition: background-color 0.3s ease;
+}
+
+.btn-check:checked + .btn {
+  background-color: #31999b;
+  border-color: #31999b;
+  color: white;
+}
